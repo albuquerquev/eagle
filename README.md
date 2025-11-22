@@ -5,12 +5,30 @@ A stock search application built with Next.js and Shadcn UI.
 ## Features
 
 - Simple stock symbol search interface
+- Real-time stock price lookup using Alpha Vantage API
+- Display current price, change, and percentage change
 - Built with Next.js 16 and React
 - Styled with Tailwind CSS v4 and Shadcn UI components
 
 ## Getting Started
 
-First, run the development server:
+### 1. Set up API Key
+
+Get a free API key from [Alpha Vantage](https://www.alphavantage.co/support/#api-key) (no credit card required).
+
+Create a `.env.local` file in the root directory:
+
+```bash
+cp .env.example .env.local
+```
+
+Add your API key to `.env.local`:
+
+```
+ALPHA_VANTAGE_API_KEY=your_api_key_here
+```
+
+### 2. Run the development server
 
 ```bash
 npm run dev
